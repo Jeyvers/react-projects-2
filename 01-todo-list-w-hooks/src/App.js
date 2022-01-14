@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './index.css';
+import Form from './form.jsx';
 
-export default () => {
-  const [count, setCount] = useState(0);
-
+const App = () => {
   return (
     <div className='App'>
-      <div>count: {count} </div>
-      <button onClick={() => setCount(count + 1)}> + </button>
+      <Form />
     </div>
   );
 };
+
+export default App;
