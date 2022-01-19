@@ -5,6 +5,7 @@ import ListItems from './ListItems';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 library.add(faTrash);
+// install (npm i -5 react-flip-move) when you have subscribed
 
 class App extends React.Component {
   constructor(props) {
