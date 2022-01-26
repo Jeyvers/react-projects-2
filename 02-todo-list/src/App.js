@@ -69,6 +69,7 @@ class App extends React.Component {
     });
   }
 
+  // render component takes the return statement to be rendered in the browser
   render() {
     return (
       <div className='app'>
