@@ -24,6 +24,14 @@ const Form = ({
 
   const statusHandler = (e) => {
     setStatus(e.target.value);
+    if (status === 'completed') {
+      setTodos(todos.filter((todo) => todo.completed === true));
+    }
+    if (status === 'uncompleted') {
+      setTodos(todos.filter((todo) => todo.completed === false));
+    } else {
+      setTodos(todos);
+    }
   };
   return (
     <form>
